@@ -4,7 +4,7 @@
  *      [Discuz!] (C)2001-2099 Comsenz Inc.
  *      This is NOT a freeware, use is subject to license terms
  *
- *      $Id: lang_misc.php 27449 2012-02-01 05:32:35Z zhangguosheng $
+ *     $Id: lang_misc.php by Valery Votintsev, codersclub.org
  */
 
 if(!defined('IN_DISCUZ')) {
@@ -13,11 +13,10 @@ if(!defined('IN_DISCUZ')) {
 
 $lang = array
 (
-	'group_normal_member' => '设为普通成员',
-	'group_goaway' => '踢出群组',
-	'group_demise_message_title' => "把{$_G[setting][navs][3][navname]}{forum}成功转让给您了。",
-	'group_demise_message_body' => "我的{$_G[setting][navs][3][navname]}{forum}成功转让给您了，[url={siteurl}forum.php?mod=group&fid={fid}]点这里查看{$_G[setting][navs][3][navname]}[/url]",
-	'group_join' => '加入{groupname}群组',
+	'group_normal_member'		=> 'Set as ordinary members',//'设为普通成员',
+	'group_goaway'			=> 'Kick out from the group',//'踢出群组',
+	'group_demise_message_title'	=> "The group {forum} successfully transferred to you",//"把{$_G[setting][navs][3][navname]}{forum}成功转让给你了。",
+	'group_demise_message_body'	=> "The group {forum} successfully transferred to you. [url={siteurl}forum.php?mod=group&fid={fid}]Click here to view the group[/url]",//"我的{$_G[setting][navs][3][navname]}{forum}成功转让给你了，[url={siteurl}forum.php?mod=group&fid={fid}]点这里查看{$_G[setting][navs][3][navname]}[/url]",
+	'group_join'			=> 'Join the group &quot;{groupname}&quot;',//'加入{groupname}群组',
 );
 
-?>

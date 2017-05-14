@@ -4,7 +4,7 @@
  *      [Discuz!] (C)2001-2099 Comsenz Inc.
  *      This is NOT a freeware, use is subject to license terms
  *
- *      $Id: lang_swfupload.php 27449 2012-02-01 05:32:35Z zhangguosheng $
+ *      $Id: lang_swfupload.php by Valery Votintsev, codersclub.org
  */
 
 if(!defined('IN_DISCUZ')) {
@@ -12,23 +12,22 @@ if(!defined('IN_DISCUZ')) {
 }
 
 $lang = "
-<okbtn>确定</okbtn>
-<ctnbtn>继续</ctnbtn>
-<fileName>文件名</fileName>
-<size>文件大小</size>
-<stat>上传进度</stat>
-<browser>浏览</browser>
-<delete>删除</delete>
-<return>返回</return>
-<upload>上传</upload>
-<okTitle>上传完成</okTitle>
-<okMsg>文件上传完成</okMsg>
-<uploadTitle>正在上传</uploadTitle>
-<uploadMsg1>总共有</uploadMsg1>
-<uploadMsg2>个文件等待上传,正在上传第</uploadMsg2>
-<uploadMsg3>个文件</uploadMsg3>
-<bigFile>文件过大</bigFile>
-<uploaderror>上传失败</uploaderror>
+<okbtn>OK</okbtn>
+<ctnbtn>Continue</ctnbtn>
+<fileName>File name</fileName>
+<size>File size</size>
+<stat>Upload progress</stat>
+<browser>Browse</browser>
+<delete>Delete</delete>
+<return>Return</return>
+<upload>Upload</upload>
+<okTitle>Upload completed</okTitle>
+<okMsg>File uploaded successfully</okMsg>
+<uploadTitle>Uploading</uploadTitle>
+<uploadMsg1>Total</uploadMsg1>
+<uploadMsg2>Wait for file uploading, progress is</uploadMsg2>
+<uploadMsg3>Files</uploadMsg3>
+<bigFile>File too large</bigFile>
+<uploaderror>Upload failed</uploaderror>
 ";
 
-?>

@@ -79,18 +79,18 @@ function profile_setting($fieldid, $space=array(), $showstatus=false, $ignoreunc
 			$selectstr = $i == $space['birthday']?' selected':'';
 			$birthdayhtml .= "<option value=\"$i\"$selectstr>$i</option>";
 		}
-		$html = '<select name="birthyear" id="birthyear" class="ps" onchange="showbirthday();" tabindex="1">'
-				.'<option value="">'.lang('space', 'year').'</option>'
+		$html = '<select name="birthyear" id="birthyear" class="infoInput" onchange="showbirthday();" tabindex="1">'
+				.'<option value="">Year</option>'
 				.$birthyeayhtml
 				.'</select>'
 				.'&nbsp;&nbsp;'
-				.'<select name="birthmonth" id="birthmonth" class="ps" onchange="showbirthday();" tabindex="1">'
-				.'<option value="">'.lang('space', 'month').'</option>'
+				.'<select name="birthmonth" id="birthmonth" class="infoInput" onchange="showbirthday();" tabindex="1">'
+				.'<option value="">Month</option>'
 				.$birthmonthhtml
 				.'</select>'
 				.'&nbsp;&nbsp;'
-				.'<select name="birthday" id="birthday" class="ps" tabindex="1">'
-				.'<option value="">'.lang('space', 'day').'</option>'
+				.'<select name="birthday" id="birthday" class="infoInput" tabindex="1">'
+				.'<option value="">Date</option>'
 				.$birthdayhtml
 				.'</select>';
 
@@ -99,14 +99,14 @@ function profile_setting($fieldid, $space=array(), $showstatus=false, $ignoreunc
 			return '<span>'.lang('space', 'gender_'.intval($space[$fieldid])).'</span>';
 		}
 		$selected = array($space[$fieldid]=>' selected="selected"');
-		$html = '<select name="gender" id="gender" class="ps" tabindex="1">';
+		$html = '<select name="gender" id="gender" class="infoInput" tabindex="1">';
 		if($field['unchangeable']) {
 			$html .= '<option value="">'.lang('space', 'gender').'</option>';
 		} else {
-			$html .= '<option value="0"'.($space[$fieldid]=='0' ? ' selected="selected"' : '').'>'.lang('space', 'gender_0').'</option>';
+			$html .= '<option value="0"'.($space[$fieldid]=='0' ? ' selected="selected"' : '').'>Secret</option>';
 		}
-		$html .= '<option value="1"'.($space[$fieldid]=='1' ? ' selected="selected"' : '').'>'.lang('space', 'gender_1').'</option>'
-			.'<option value="2"'.($space[$fieldid]=='2' ? ' selected="selected"' : '').'>'.lang('space', 'gender_2').'</option>'
+		$html .= '<option value="1"'.($space[$fieldid]=='1' ? ' selected="selected"' : '').'>Male</option>'
+			.'<option value="2"'.($space[$fieldid]=='2' ? ' selected="selected"' : '').'>Female</option>'
 			.'</select>';
 
 	} elseif($fieldid=='birthcity') {
@@ -137,7 +137,9 @@ function profile_setting($fieldid, $space=array(), $showstatus=false, $ignoreunc
 			$html = '<p id="residedistrictbox">'.showdistrict($values, $elems, 'residedistrictbox', 1, 'reside').'</p>';
 		}
 	} elseif($fieldid=='qq') {
-		$html = "<input type=\"text\" name=\"$fieldid\" id=\"$fieldid\" class=\"px\" value=\"$space[$fieldid]\" tabindex=\"1\" /><p><a href=\"\" class=\"xi2\" onclick=\"this.href='http://wp.qq.com/set.html?from=discuz&uin='+$('$fieldid').value\" target=\"_blank\">".lang('spacecp', 'qq_set_status')."</a></p>";
+		$html = "<input type=\"text\" name=\"$fieldid\" id=\"$fieldid\" class=\"infoInput\" value=\"$space[$fieldid]\" tabindex=\"1\" /><p><a href=\"\" class=\"xi2\" onclick=\"this.href='http://wp.qq.com/set.html?from=discuz&uin='+$('$fieldid').value\" target=\"_blank\">".lang('spacecp', 'qq_set_status')."</a></p>";
+	} elseif($fieldid=='lookingfor'){
+		$html = "<textarea name=\"$fieldid\" id=\"$fieldid\"  placeholder=\"Write something about you here\" >$space[$fieldid]</textarea>";
 	} else {
 		if($field['unchangeable'] && $space[$fieldid]!='') {
 			if($field['formtype']=='file') {
@@ -185,8 +187,8 @@ function profile_setting($fieldid, $space=array(), $showstatus=false, $ignoreunc
 				$url = getglobal('setting/attachurl').'./profile/'.$space[$fieldid];
 				$html .= "&nbsp;<label><input type=\"checkbox\" class=\"checkbox\" tabindex=\"1\" name=\"deletefile[$fieldid]\" id=\"$fieldid\" value=\"yes\" />".lang('spacecp', 'delete')."</label><br /><a href=\"$url\" target=\"_blank\"><img src=\"$url\" width=\"200\" class=\"mtm\" /></a>";
 			}
-		} else {
-			$html = "<input type=\"text\" name=\"$fieldid\" id=\"$fieldid\" class=\"px\" value=\"$space[$fieldid]\" tabindex=\"1\" />";
+		}else {
+			$html = "<input type=\"text\" name=\"$fieldid\" id=\"$fieldid\" class=\"infoInput\" value=\"$space[$fieldid]\" tabindex=\"1\" />";
 		}
 	}
 	$html .= !$ignoreshowerror ? "<div class=\"rq mtn\" id=\"showerror_$fieldid\"></div>" : '';
