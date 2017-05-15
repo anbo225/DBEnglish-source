@@ -4,7 +4,11 @@
  *      [Discuz!] (C)2001-2099 Comsenz Inc.
  *      This is NOT a freeware, use is subject to license terms
  *
+<<<<<<< HEAD
  *      $Id: lang_spacecp.php by Valery Votintsev, codersclub.org
+=======
+ *      $Id: lang_spacecp.php 32426 2013-01-15 10:00:21Z liulanbo $
+>>>>>>> 5f24061919e7be23fd11aa4bcd69e2c7f7c315b5
  */
 
 if(!defined('IN_DISCUZ')) {
@@ -12,6 +16,7 @@ if(!defined('IN_DISCUZ')) {
 }
 
 $lang = array(
+
 
 	'by'			=> 'Accept by',//'通过',
 	'tab_space'		=> ' ',
@@ -338,4 +343,5 @@ $lang = array(
 	'qq_dialog'		=> 'Start QQ chat',//'发起QQ聊天',
 
 );
+
 
