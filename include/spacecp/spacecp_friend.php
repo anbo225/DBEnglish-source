@@ -125,7 +125,7 @@ if($op == 'add') {
 			} else {
 				friend_request_delete($uid);
 			}
-			showmessage('do_success', 'home.php?mod=spacecp&ac=friend&op=request', array('uid'=>$uid, 'from' => $_GET['from']), array('showdialog' => 1, 'showmsg' => true, 'closetime' => 0));
+			showmessage('do_success', 'home.php?mod=spacecp&ac=friend&op=request', array('uid'=>$uid, 'from' => $_GET['from']), array('showdialog' => 1, 'showmsg' => true, 'closetime' => true));
 		}
 	} elseif($_GET['key'] == $space['key']) {
 		$count = C::t('home_friend_request')->count_by_uid($_G['uid']);
@@ -332,7 +332,7 @@ if($op == 'add') {
 		$maxfriendnum = $maxfriendnum + $space['addfriend'];
 	}
 
-	$perpage = 20;
+	$perpage = 9;
 	$perpage = mob_perpage($perpage);
 
 	$page = empty($_GET['page'])?0:intval($_GET['page']);

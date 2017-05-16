@@ -11,7 +11,7 @@ if(!defined('IN_DISCUZ')) {
 	exit('Access Denied');
 }
 
-$perpage = 24;
+$perpage = 9;
 $perpage = mob_perpage($perpage);
 
 $list = $ols = $fuids = array();
