@@ -139,7 +139,7 @@ if($_GET['from'] == 'portal') {
 	}
 
 	$t_link = 'forum.php?mod=forumdisplay&amp;fid='.$_G['fid'].($_GET['extra'] && !IS_ROBOT ? '&amp;'.$_GET['extra'] : '');
-	$navigation .= ' <em>&rsaquo;</em> <a href="'.$t_link.'">'.($_G['forum']['name']).'</a>';
+	$navigation .= ' <a href="'.$t_link.'">'.($_G['forum']['name']).'</a>';
 
 	if($archiveid) {
 		if($threadtable_info[$archiveid]['displayname']) {
@@ -150,6 +150,7 @@ if($_GET['from'] == 'portal') {
 		$navigation .= ' <em>&rsaquo;</em> <a href="forum.php?mod=forumdisplay&fid='.$_G['fid'].'&archiveid='.$archiveid.'">'.$t_name.'</a>';
 	}
 
+	
 	unset($t_link, $t_name);
 }
 

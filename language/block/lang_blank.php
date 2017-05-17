@@ -4,7 +4,7 @@
  *      [Discuz!] (C)2001-2099 Comsenz Inc.
  *      This is NOT a freeware, use is subject to license terms
  *
- *      $Id: lang_blank.php by Valery Votintsev, codersclub.org
+ *      $Id: lang_blank.php 27449 2012-02-01 05:32:35Z zhangguosheng $
  */
 
 if(!defined('IN_DISCUZ')) {
@@ -13,5 +13,6 @@ if(!defined('IN_DISCUZ')) {
 
 $lang = array
 (
-	'blank_content'	=> 'HTML code',//'HTML代码',
+	'blank_content' => 'HTML代码',
 );
+?>
