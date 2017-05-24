@@ -55,7 +55,7 @@ $lang = array
 
 	'title_goruptype' => '类',
 	'title_of' => '的',
-	'title_board_message' => '提示信息',
+	'title_board_message' => 'Reminder',
 	'title_view_all' => '随便看看',
 	'title_activity' => '活动',
 	'title_friend_activity' => '好友发起的活动',
