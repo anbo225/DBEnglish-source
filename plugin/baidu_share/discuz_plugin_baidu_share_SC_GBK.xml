@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X1.5,X2,X2.5,X3]]></item>
+	<item id="Time"><![CDATA[2013-06-27 18:25]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost/bbs/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[°Ù¶È·ÖÏí²å¼þ]]></item>
+			<item id="identifier"><![CDATA[baidu_share]]></item>
+			<item id="description"><![CDATA[°Ù¶È·ÖÏíÊÇÒ»¸öÌá¹©ÍøÒ³µØÖ·ÊÕ²Ø¡¢·ÖÏí¼°·¢ËÍµÄWEB2.0°´Å¥¹¤¾ß£¬½èÖú°Ù¶È·ÖÏí°´Å¥£¬ÍøÕ¾µÄä¯ÀÀÕß¿ÉÒÔ·½±ãµÄ·ÖÏíÄÚÈÝµ½ÈËÈËÍø¡¢¿ªÐÄÍø¡¢QQ¿Õ¼ä¡¢ÐÂÀËÎ¢²©µÈÒ»ÏµÁÐSNSÕ¾µã¡£ ÍøÕ¾Ö÷¿ÉÒÔÔÚ°Ù¶È·ÖÏíÍøÕ¾ÖÐ»ñµÃ·ÖÏí°´Å¥JS´úÂë£¬Ç¶Èëµ½×Ô¼ºµÄÍøÕ¾£¬ÈÃÍøÕ¾Á´½Ó·ÖÏíµ½»¥ÁªÍø¸÷¸ö½ÇÂä£¡
+Í¨¹ý°Ù¶È·ÖÏí°´Å¥£¬ÄúµÄÍøÕ¾µÄä¯ÀÀÕß¿ÉÒÔ±ã½ÝµÃ·ÖÏíÄúÍøÕ¾ÉÏµÄÄÚÈÝµ½ÈËÈËÍø¡¢¿ªÐÄÍø¡¢qq¿Õ¼ä¡¢ÐÂÀËÎ¢²©µÈSNSÕ¾µã½øÐÐ´«²¥£¬ÎªÄúµÄÍøÕ¾´ø»Ø¸ü¶àµÄÁ÷Á¿¡£
+Í¨¹ý°Ù¶È·ÖÏí°´Å¥£¬ÄúÍøÕ¾ÉÏµÄÍøÒ³½«¸üÈÝÒ×±»°Ù¶ÈËÑË÷ÒýÇæËù·¢ÏÖ£¬´Ó¶øÓÐ»ú»á´Ó°Ù¶ÈËÑË÷´ø»Ø¸ü¶àµÄÁ÷Á¿¡£
+Í¨¹ý°Ù¶È·ÖÏí°´Å¥£¬ºóÐøÄú»¹¿ÉÒÔÃâ·Ñ»ñÈ¡Ïê¾¡µÄ·ÖÏíÍ³¼Æ·ÖÎö£¬ÁË½âÍøÃñ½«ÄúÍøÕ¾ÉÏÄÄÐ©ÄÚÈÝ·ÖÏíµ½ÄÄÐ©SNSÍøÕ¾£¬Ã¿ÈÕµÄ·ÖÏí´ÎÊýÊÇ¶àÉÙ£¬°ïÄú¸üºÃµÃµÄ¸ú×Ù¡¢·ÖÎö¡¢¼¤ÀøÓÃ»§µÄ·ÖÏíÐÐÎª£¬ÎªÍøÕ¾´øÀ´¸ü¶àµÄÁ÷Á¿¡££¨¸Ã¹¦ÄÜ¼´½«¿ª·Å£¬¾´ÇëÆÚ´ý£©
+¸Ï½ôÃâ·Ñ»ñÈ¡°Ù¶È·ÖÏí°´Å¥£¬»ñÈ¡¸ü¶àµÄÁ÷Á¿£¬Äú»¹µÈÊ²Ã´ÄØ£¿
+]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[baidu_share/]]></item>
+			<item id="copyright"><![CDATA[Baidu Inc.]]></item>
+			<item id="version"><![CDATA[1.0.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[baidu_share]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X1.5,X2,X2.5,X3]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[·ÖÏíÄÚÈÝÉèÖÃ]]></item>
+				<item id="description"><![CDATA[°Ù¶È·ÖÏí°´Å¥Ä¬ÈÏ·ÖÏíÄúµÄÒ³Ãætitle¼´Ö÷Ìû±êÌâ£¬Äú¿ÉÒÔÉèÖÃÎª·ÖÏíÒ³ÃæÄÚÈÝ¡£¸ü¶àÉèÖÃÑ¡Ïî½«Ëæ¸üÐÂ¿ª·Å£¬¾´ÇëÆÚ´ý¡£]]></item>
+				<item id="variable"><![CDATA[baidu_share_content]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[1 = Ö÷Ìû±êÌâ
+2 = Ö÷ÌûÄÚÈÝ]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[°Ù¶È·ÖÏí°´Å¥Î»ÖÃ]]></item>
+				<item id="description"><![CDATA[°Ù¶È·ÖÏí°´Å¥¿ÉÒÔÇ¶ÈëÄúµÄÌû×ÓÒ³ÃæµÄ¶à¸öÎ»ÖÃ£¬Çë¸ù¾ÝÄúµÄÊµ¼ÊÐèÒªÑ¡ÔñÇ¶ÈëÎ»ÖÃ¡£
+				×¢£º¸¡´°Ê½°´Å¥²»ÊÜ±¾ÉèÖÃÏîÓ°Ïì¡£ÉÙ²¿·Ö°´Å¥ÑùÊ½¿ÉÄÜ»áÔÚ¸ö±ðä¯ÀÀÆ÷ÖÐÏÔÊ¾²»Õý³££¬Èç³öÏÖÕâÖÖÇé¿ö£¬ÇëÄú¸ü»»¼æÈÝÐÔ½ÏºÃµÄ°´Å¥ÑùÊ½¡£´ËÎÊÌâ½«ÔÚÏÂÒ»¸ö°æ±¾ÖÐÐÞ¸´¡£]]></item>
+				<item id="variable"><![CDATA[baidu_share_position]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[1 = Ö÷ÌûÍ·²¿
+2 = Ö÷ÌûÎ²²¿
+3 = Ö÷ÌûÕýÎÄÉÏ·½
+4 = Ö÷ÌûÕýÎÄÏÂ·½]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[°Ù¶È·ÖÏí°´Å¥´úÂë]]></item>
+				<item id="description"><![CDATA[ÇëÔÚ´Ë´¦ÊäÈëÄú´Ó°Ù¶È·ÖÏíÍøÕ¾ÉÏ»ñµÃµÄ·ÖÏí°´Å¥Javascript´úÂë¡£<a href="http://share.baidu.com" target="_blank"><u style="color:blue">Çëµã»÷´Ë´¦·ÃÎÊ°Ù¶È·ÖÏíÍøÕ¾</u></a>]]></item>
+				<item id="variable"><![CDATA[baidu_share_script]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<!-- Baidu Button BEGIN -->
+    <div id="bdshare" class="bdshare_b" style="line-height: 12px;"><img src="http://share.baidu.com/static/images/type-button-1.jpg" /></div>
+    <script type="text/javascript" id="bdshare_js" data="type=button&amp;uid=0" ></script>
+    <script type="text/javascript" id="bdshell_js"></script>
+    <script type="text/javascript">
+        document.getElementById("bdshell_js").src = "http://share.baidu.com/static/js/shell_v2.js?t=" + new Date().getHours();
+    </script>
+<!-- Baidu Button END -->]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+	</item>
+</root>
