@@ -1,0 +1,37 @@
+<ul class="tb cl">
+<!--{if $hide_login != 1}-->
+<li{if $tag == ''} class="a"{/if}><a href="home.php?mod=spacecp&ac=plugin&id=dzconnect:home_binding">{$_DZC_LANG['login_bind']}</a></li>
+<!--{/if}-->
+<!--{if $hide_sync != 1}-->
+<li{if $tag == 'sync'} class="a"{/if}><a href="home.php?mod=spacecp&ac=plugin&id=dzconnect:home_binding&tag=sync">{$_DZC_LANG['sync_bind']}</a></li>
+<!--{/if}-->
+</ul>
+<!--{if $tag ==''}-->
+<h2 class="mtm mbm">{$_DZC_LANG['home_binding_login_h2']}</h2>
+<table id="list_modcp_logs" cellspacing="0" cellpadding="0" class="dt" style='width:75%'>
+<thead>
+<tr>
+<th width="25%">{$_DZC_LANG['social_sites']}</th>
+<th width="45%">{$_DZC_LANG['current_binded']}</th>
+<th width="30%">{$_DZC_LANG['handle']}</th>
+</tr>
+</thead>
+{$bind_list}
+</table>
+<!--{/if}-->
+
+<!--{if $tag =='sync'}-->
+<h2 class="mtm mbm">{$_DZC_LANG['home_binding_sync_h2']}</h2>
+<table id="list_modcp_logs" cellspacing="0" cellpadding="0" class="dt">
+<thead>
+<tr>
+<th width="13%">{$_DZC_LANG['social_sites']}</th>
+<th width="30%">{$_DZC_LANG['current_binded']}</th>
+<th width="37%">{$_DZC_LANG['authorized_period']}</td>
+<th width="20%">{$_DZC_LANG['handle']}</th>
+</tr>
+</thead>
+{$bind_list}
+</table>
+<!--{/if}-->
+{$_DZC_LANG['get_dzconnect_plugs']}

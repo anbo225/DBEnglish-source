@@ -1,0 +1,31 @@
+<script type="text/javascript">function dl_switch(id){var dl_s=document.getElementById('dl_s');dl_s.style.display='';dl_s.src='source/plugin/dzconnect/'+id+'.php'}</script>
+<form name="cpform" method="post" autocomplete="off" action="" id="cpform">
+  <table class="tb tb2 ">
+    <tr>
+      <th colspan="15" class="partition">{$_DZC_LANG['login_settings']}</th>
+    </tr>
+    <tr>
+      <td colspan="2" class="td27">{$_DZC_LANG['sina_switch']}<button type="button" class="btn" onclick="dl_switch('sina')">{$_DZC_LANG['transform']}!</button></td>
+    </tr>
+    <tr class="noborder">
+      <td colspan="2"><iframe id="dl_s" style="width:100%;height:120px;display:none;border:0px;"></iframe></td>
+    </tr>
+    <tr>
+      <th colspan="15" class="partition">{$_DZC_LANG['weixin_settings']}</th>
+    </tr>
+    <tr>
+      <td colspan="2" class="vtop"><label><input class="checkbox" type="checkbox" name="is_display_weixin_button" disabled /> {$_DZC_LANG['is_display_weixin_button']}</label></td>
+    </tr>
+    <tr>
+      <th colspan="15" class="partition">{$_DZC_LANG['server_time']}</th>
+    </tr>
+    <tr>
+      <td colspan="2" class="td27">{$_DZC_LANG['server_time_tip']}<br />{$_DZC_LANG['bjtime']} <select name="time_char"><option value="-1"{if $set['time_char'] == '-1'} selected{/if}>{$_DZC_LANG['fast']}</option><option value="1"{if $set['time_char'] == '1'} selected{/if}>{$_DZC_LANG['slow']}</option></select> <input name="time_minutes" type="text" size="2" value="{$set['time_minutes']}" onkeyup="value=value.replace(/[^\d]/g,'')" />&nbsp;&nbsp;{$_DZC_LANG['minutes']}</td>
+    </tr>
+    <tr>
+      <td colspan="15"><div class="fixsel">
+          <input type="submit" class="btn" id="submit_editsubmit" name="editsubmit" title="{$_DZC_LANG['press_enter']}" value="{$_DZC_LANG['save']}" />
+        </div></td>
+    </tr>
+  </table>
+</form>

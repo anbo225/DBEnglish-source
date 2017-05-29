@@ -1,0 +1,21 @@
+<!--{block return}-->
+<!--{if $addSyncList}-->
+<script src="{$this->dzc_p_rootname}/js/js.js"></script>
+<div class="mtm{if $currentPage == 'home'} dz_m_donging{/if}">
+<input type="hidden" id="syncList" name="syncList" value="{$inputIconList}" />
+<input type="checkbox" id="synctowb" onclick="syncSelectAll(this);"{if $inputIconList} checked{/if} /> <label class="dz_mt_link" for="synctowb">{$_DZC_LANG['sync_post_to']}</label> 
+<!-- {lang dzconnect:dzconnect_copyright} -->
+<span id="syncIcon">
+{$addSyncList}
+</span>
+<a target="_blank" href="home.php?mod=spacecp&ac=plugin&id={$this->pluginid}:home_binding&tag=sync" class="dz_mt_link moreBind"> {$_DZC_LANG['bind_more_account']}</a>
+<!--{if $currentPage == 'home' || $currentPage == 'doing'}--><script type="text/javascript">addSyncInput();</script><!--{/if}-->
+</div>
+<!--{else}-->
+<div class="mtm">
+<input type="checkbox" disabled /> <label class="dz_mt_link" for="synctowb">{$_DZC_LANG['sync_post_to_weibo']}</label> 
+<a target="_blank" href="home.php?mod=spacecp&ac=plugin&id={$this->pluginid}:home_binding&tag=sync" class="dz_mt_link moreBind"> {$_DZC_LANG['bind_weibo_account']}</a>
+</div>
+<style type="text/css">.dz_mt_link{position:relative;top:-3px;}.moreBind{margin-left:7px;color:red;}</style>
+<!--{/if}-->
+<!--{/block}-->

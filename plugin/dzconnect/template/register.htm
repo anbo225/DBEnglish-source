@@ -1,0 +1,171 @@
+<!--{template common/header}-->
+<link rel="stylesheet" type="text/css" href="source/plugin/dzconnect/css/style.css" />
+
+<div class="mainPage">
+    <div class="searchBar">
+      <div class="blank"></div>
+      <div class="context">
+        <div class="search">
+          <img src="./template/EnglishDB/common/img/search.png" class="logo" />
+          <input type="text" name="search" placeholder="search" />
+        </div>
+      </div>
+      <div class="blank"></div>
+    </div>
+
+    <div  class="main" style="background-image: url(./template/EnglishDB/common/img/background.png)">
+      <div class="blank"></div>
+      <div class="mainContent">
+        <div class="bm" id="main_message" style="margin: 30px 0 12px">
+          <div class="tb cl ">
+            <ul>
+              <li id="connect_tab_1" class="a"><a href="javascript:;" onclick="cw_tab_switch(1);this.blur();" tabindex="900">{$_DZC_LANG['register_profile']}</a></li>
+              <li id="connect_tab_2"><a href="javascript:;" onclick="cw_tab_switch(2);this.blur();" tabindex="900">{$_DZC_LANG['register_has_id']} {$_DZC_LANG['register_bind']}</a></li>
+            </ul>
+          </div>
+          <div class="rfm" id="connect_member_register_tip" style="display:block;">
+            <table>
+              <tr>
+                <th><span class="dz_m_link dz_m_{$media} mtn"></span></th>
+                <td>{lang dzconnect:member_register_tip}</td>
+              </tr>
+            </table>
+          </div>
+          <div class="rfm" id="connect_member_loginbind_tip" style="display:none;">
+            <table>
+              <tr>
+                <th><span class="dz_m_link dz_m_{$media} mtn"></span></th>
+                <td>{lang dzconnect:member_loginbind_tip}</td>
+              </tr>
+            </table>
+          </div>
+          <p id="returnmessage4" class="{if $error_tip}onerror{/if}">
+            <!--{if $error_tip}-->{$error_tip}<!--{/if}-->
+          </p>
+          <form method="post" name="register" id="registerform" onsubmit="return cw_checksubmit(1);" action="" autocomplete="off">
+            <div id="layer_reg" class="bm_c">
+              <div class="rfm">
+                <table>
+                  <tr>
+                    <th><span class="rq">*</span>
+                      <label for="cw_username">Username:</label></th>
+                    <td><input type="text" id="cw_username" name="cw_username" value="{$cw_username}" class="px" tabindex="1" autocomplete="off" size="25" maxlength="15" required /></td>
+                    <td class="tipcol"><span id="tip_cw_username" class="cw_tip">{$_DZC_LANG['register_username_tips']}</span></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="rfm">
+                <table>
+                  <tr>
+                    <th><span class="rq">*</span>
+                      <label for="cw_password">Password:</label></th>
+                    <td><input type="password" id="cw_password" name="cw_password" size="25" tabindex="1" class="px" required /></td>
+                    <td class="tipcol"><span id="tip_cw_password" class="cw_tip">{$_DZC_LANG['register_password_tips']}</span></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="rfm">
+                <table>
+                  <tr>
+                    <th><span class="rq">*</span>
+                      <label for="cw_email">Email:</label></th>
+                    <td><input type="text" id="cw_email" name="cw_email" value="{$cw_email}" autocomplete="off" size="25" tabindex="1" class="px" required />
+                      <br />
+                      <em id="emailmore">&nbsp;</em></td>
+                    <td class="tipcol"><span id="tip_cw_email" class="cw_tip">{$_DZC_LANG['register_email_tips']}</span></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div id="layer_reginfo_b">
+              <div class="rfm mbw bw0">
+                <table width="100%">
+                  <tr>
+                    <th>&nbsp;</th>
+                    <td><span id="reginfo_a_btn"> <em>&nbsp;</em>
+                      <button class="jumpButton" id="registerformsubmit" type="submit" name="regsubmit" value="true" tabindex="1"><strong>{$_DZC_LANG['register_finish']}</strong></button>
+                      </span></td>
+                    <td></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </form>
+          <div class="b1lr">
+            <form method="post" name="login" id="loginform_LzjF6" class="cl" style="display:none" onsubmit="return cw_checksubmit(2);" action="" autocomplete="off">
+              <div class="c cl bm_c">
+                <div class="rfm">
+                  <table>
+                    <tr>
+                      <th>
+    					<!--{if $_G['setting']['autoidselect']}-->
+    					<label for="username_LzjF6">{lang login_id}:</label>
+    					<!--{else}-->
+    					<span class="login_slct">
+                          <select name="loginfield" style="float: left;" width="45" id="loginfield_LzjF6">
+    						<option value="username"{if $loginfield == 'username'} selected{/if}>Username</option>
+    						<option value="uid"{if $loginfield == 'uid'} selected{/if}>{lang uid}</option>
+    						<option value="email"{if $loginfield == 'email'} selected{/if}>{lang email}</option>
+                          </select>
+                         </span>
+    					<!--{/if}-->
+    				  </th>
+                      <td><input type="text" name="username" id="username_LzjF6" autocomplete="off" size="36" class="txt" tabindex="1" value="{$username}" required /></td>
+    				  <td class="tipcol"><span id="tip_username_LzjF6" class="cw_tip">{$_DZC_LANG['register_login_username_tips']}</span></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="rfm">
+                  <table>
+                    <tr>
+                      <th><label for="password_LzjF6">Password:</label></th>
+                      <td><input type="password" id="password_LzjF6" name="password" size="36" class="txt" tabindex="1" required /></td>
+    				  <td class="tipcol"><span id="tip_password_LzjF6" class="cw_tip">{$_DZC_LANG['register_password_tips']}</span></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="rfm">
+                  <table>
+                    <tr>
+                      <th>Security question:</th>
+                      <td><select id="loginquestionid_LzjF6" width="213" name="questionid" onchange="if($('loginquestionid_LzjF6').value > 0) $('loginanswer_row_LzjF6').style.display=''; else $('loginanswer_row_LzjF6').style.display='none'">
+    					<option value="0">{lang security_question}</option>
+    					<option value="1">{lang security_question_1}</option>
+    					<option value="2">{lang security_question_2}</option>
+    					<option value="3">{lang security_question_3}</option>
+    					<option value="4">{lang security_question_4}</option>
+    					<option value="5">{lang security_question_5}</option>
+    					<option value="6">{lang security_question_6}</option>
+    					<option value="7">{lang security_question_7}</option>
+                        </select></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="rfm" id="loginanswer_row_LzjF6" style="display:none">
+                  <table>
+                    <tr>
+                      <th>{lang security_a}:</th>
+                      <td><input type="text" name="answer" id="loginanswer_LzjF6" autocomplete="off" size="36" class="txt" tabindex="1" /></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="rfm mbw bw0">
+                <table>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <td><button class="jumpButton " type="submit" name="loginsubmit" value="true" tabindex="1"><strong>{$_DZC_LANG['register_bind_window_button']}</strong></button></td>
+                  </tr>
+                </table>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+    <script type="text/javascript">
+    function cw_tab_switch(op){if(op){$('returnmessage4').className='';$('returnmessage4').innerHTML=''}if(op==1){$('loginform_LzjF6').style.display='none';$('registerform').style.display='block';$('connect_member_register_tip').style.display='block';$('connect_member_loginbind_tip').style.display='none';$('connect_tab_1').className='a';$('connect_tab_2').className=''}else{$('loginform_LzjF6').style.display='block';$('registerform').style.display='none';$('connect_member_register_tip').style.display='none';$('connect_member_loginbind_tip').style.display='block';$('connect_tab_1').className='';$('connect_tab_2').className='a'}}function cw_checksubmit(op){var r=false;if(op==1){$('tip_cw_username').style.display='';$('tip_cw_password').style.display='';$('tip_cw_email').style.display='';if($('cw_username').value==''){$('tip_cw_username').style.display='block'}else if($('cw_password').value==''){$('tip_cw_password').style.display='block'}else if($('cw_email').value==''){$('tip_cw_email').style.display='block'}else{r=true}}else{$('tip_username_LzjF6').style.display='';$('tip_password_LzjF6').style.display='';if($('username_LzjF6').value==''){$('tip_username_LzjF6').style.display='block'}else if($('password_LzjF6').value==''){$('tip_password_LzjF6').style.display='block'}else{r=true}}return r}simulateSelect('loginfield_LzjF6');<!--{if $_POST['loginsubmit']}-->cw_tab_switch('');<!--{/if}-->
+    </script>
+
+<!--{template common/footer}-->

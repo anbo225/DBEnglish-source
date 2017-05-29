@@ -1,0 +1,39 @@
+<form name="cpform" method="post" autocomplete="off" action="" id="cpform">
+  <table class="tb tb2 ">
+    <tr>
+      <th colspan="15" class="partition">{$_DZC_LANG['sync_settings']}</th>
+    </tr>
+    <tr>
+      <td colspan="2" class="td27"> {$_DZC_LANG['admin_open_sync_module']}</td>
+    </tr>
+    <tr class="noborder">
+      <td colspan="2" class="vtop">
+          <label><input class="checkbox" type="checkbox" name="is_synctopic_toweibo" value="1"{if $set['is_synctopic_toweibo']} checked{/if} />{$_DZC_LANG['forum_posts']}</label>
+          <label><input class="checkbox" type="checkbox" name="is_syncdoing_toweibo" value="1"{if $set['is_syncdoing_toweibo']} checked{/if} />{$_DZC_LANG['record']}</label>
+		  <label><input class="checkbox" type="checkbox" name="is_syncblog_toweibo" value="1"{if $set['is_syncblog_toweibo']} checked{/if} />{$_DZC_LANG['blog']}</label>
+		  <label><input class="checkbox" type="checkbox" name="is_syncreply_toweibo" value="1"{if $set['is_syncreply_toweibo']} checked{/if} />{$_DZC_LANG['reply']}{$_DZC_LANG['reply_tip']}</label>
+	  </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="td27"> {$_DZC_LANG['admin_open_sync_button']}</td>
+    </tr>
+    <tr class="noborder">
+      <td colspan="2" class="vtop">
+		  <!--{loop $sync_list $k $v}-->
+		  <label><input class="checkbox" type="checkbox" name="sync_list[]" value="{$k}"{if $v} checked{/if} />{$_DZC_LANG[$k]}</label>
+		  <!--{/loop}-->
+		  &nbsp;&nbsp;({$_DZC_LANG['didnot_buy_title']}<!--{loop $sync_list2 $v}--> {$_DZC_LANG[$v]} <!--{/loop}-->)
+    </tr>
+    <tr>
+      <td colspan="2" class="vtop"><label><input class="checkbox" type="checkbox" name="is_sync_pic" value="1"{if $set['is_sync_pic']} checked{/if} />{$_DZC_LANG['admin_open_sync_pic']}</label></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="vtop"><label><input class="checkbox" type="checkbox" name="is_akey_share" disabled />{$_DZC_LANG['admin_open_akey_share']}</label></td>
+    </tr>
+    <tr>
+      <td colspan="15"><div class="fixsel">
+          <input type="submit" class="btn" id="submit_editsubmit" name="editsubmit" title="{$_DZC_LANG['press_enter']}" value="{$_DZC_LANG['save']}" />
+        </div></td>
+    </tr>
+  </table>
+</form>

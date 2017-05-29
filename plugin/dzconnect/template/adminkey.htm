@@ -1,0 +1,334 @@
+<form name="cpform" method="post" autocomplete="off" action="" id="cpform">
+  <table class="tb tb2 ">
+    <tr>
+      <td colspan="2" class="td27">{$_DZC_LANG['didnot_buy_tip']}</td>
+    </tr>
+    <tr>
+      <th colspan="15" class="partition">&#8226; {$_DZC_LANG['custom_key']}</th>
+    </tr>
+    <tr>
+      <td colspan="2" class="td27">{$_DZC_LANG['callback_address']}{DZC_LOGIN}</td>
+    </tr>
+    <tr>
+      <td colspan="2" class="td27">{$_DZC_LANG['custom_key_description']}</td>
+    </tr>
+    <tr>
+      <td colspan="15" class="partition">{$_DZC_LANG['must_apply_key']}</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>{$_DZC_LANG['taobao']}</strong> ( App Key:
+        <input name="taobao[]" type="text" value="{$key['taobao'][0]}" />
+        App Secret:
+        <input name="taobao[]" type="text" value="{$key['taobao'][1]}" />
+        <a href="http://open.taobao.com/doc/detail.htm?spm=0.0.0.179.d7fwt4&id=1028" target="_blank">{$_DZC_LANG['how_to_get']}</a> )</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>{$_DZC_LANG['alipay']}</strong> ( partner:
+        <input name="alipay[]" type="text" value="{$key['alipay'][0]}" />
+        key:
+        <input name="alipay[]" type="text" value="{$key['alipay'][1]}" />
+        <a href="https://b.alipay.com/order/productDetail.htm?productId=2011042200323155" target="_blank">{$_DZC_LANG['how_to_get']}</a> )</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>{$_DZC_LANG['facebook']}</strong> ( App Key:
+        <input name="facebook[]" type="text" value="{$key['facebook'][0]}" />
+        App Secret:
+        <input name="facebook[]" type="text" value="{$key['facebook'][1]}" />
+        <a href="https://developers.facebook.com/apps" target="_blank">{$_DZC_LANG['to_apply']}</a> )</td>
+    </tr>
+    <tr>
+      <td colspan="15" class="partition">{$_DZC_LANG['may_apply_key']}</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>{$_DZC_LANG['qzone']}</strong> ( APP ID:
+        <input name="qzone[]" type="text" value="{$key['qzone'][0]}" />
+        APP Key:
+        <input name="qzone[]" type="text" value="{$key['qzone'][1]}" />
+        <a href="http://www.smyx.net/wiki/wordpress/faqs/qq" target="_blank">{$_DZC_LANG['how_to_get']}</a> )</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>{$_DZC_LANG['sina']}</strong> ( App Key:
+        <input name="sina[]" type="text" value="{$key['sina'][0]}" />
+        App Secret:
+        <input name="sina[]" type="text" value="{$key['sina'][1]}" />
+        <a href="http://open.weibo.com/connect" target="_blank">{$_DZC_LANG['to_apply']}</a> )</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>{$_DZC_LANG['qq']}</strong> ( App Key:
+        <input name="qq[]" type="text" value="{$key['qq'][0]}" />
+        App Secret:
+        <input name="qq[]" type="text" value="{$key['qq'][1]}" />
+        <a href="http://dev.t.qq.com/developer/" target="_blank">{$_DZC_LANG['to_apply']}</a> )</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>{$_DZC_LANG['renren']}</strong> ( API Key:
+        <input name="renren[]" type="text" value="{$key['renren'][0]}" />
+        Secret Key:
+        <input name="renren[]" type="text" value="{$key['renren'][1]}" />
+        <a href="http://www.smyx.net/wiki/wordpress/faqs/renren" target="_blank">{$_DZC_LANG['how_to_get']}</a> )</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>{$_DZC_LANG['kaixin001']}</strong> ( API Key:
+        <input name="kaixin001[]" type="text" value="{$key['kaixin001'][0]}" />
+        Secret Key:
+        <input name="kaixin001[]" type="text" value="{$key['kaixin001'][1]}" />
+        <a href="http://wiki.open.kaixin001.com/index.php?id=%E5%BC%80%E5%BF%83%E8%BF%9E%E6%8E%A5" target="_blank">{$_DZC_LANG['how_to_get']}</a> )</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>{$_DZC_LANG['sohu']}</strong> ( Consumer Key:
+        <input name="sohu[]" type="text" value="{$key['sohu'][0]}" />
+        secret:
+        <input name="sohu[]" type="text" value="{$key['sohu'][1]}" />
+        <a href="http://open.t.sohu.com/" target="_blank">{$_DZC_LANG['to_apply']}</a> )</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>{$_DZC_LANG['netease']}</strong> ( Consumer Key:
+        <input name="netease[]" type="text" value="{$key['netease'][0]}" />
+        secret:
+        <input name="netease[]" type="text" value="{$key['netease'][1]}" />
+        <a href="http://open.t.163.com/" target="_blank">{$_DZC_LANG['to_apply']}</a> )</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>{$_DZC_LANG['douban']}</strong> ( API Key:
+        <input name="douban[]" type="text" value="{$key['douban'][0]}" />
+        Secret:
+        <input name="douban[]" type="text" value="{$key['douban'][1]}" />
+        <a href="http://developers.douban.com/wiki/?title=tutorial" target="_blank">{$_DZC_LANG['to_apply']}</a> )</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>{$_DZC_LANG['tianya']}</strong> ( App Key:
+        <input name="tianya[]" type="text" value="{$key['tianya'][0]}" />
+        App Secret:
+        <input name="tianya[]" type="text" value="{$key['tianya'][1]}" />
+        <a href="http://open.tianya.cn/" target="_blank">{$_DZC_LANG['to_apply']}</a> )</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>{$_DZC_LANG['baidu']}</strong> ( API Key:
+        <input name="baidu[]" type="text" value="{$key['baidu'][0]}" />
+        Secret Key:
+        <input name="baidu[]" type="text" value="{$key['baidu'][1]}" />
+        <a href="http://www.smyx.net/wiki/wordpress/faqs/baidu" target="_blank">{$_DZC_LANG['how_to_get']}</a> )</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>{$_DZC_LANG['360']}</strong> ( App Key:
+        <input name="open360[]" type="text" value="{$key['360'][0]}" />
+        App Secret:
+        <input name="open360[]" type="text" value="{$key['360'][1]}" />
+        <a href="http://open.app.360.cn/" target="_blank">{$_DZC_LANG['to_apply']}</a> )</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>{$_DZC_LANG['twitter']}</strong> ( App Key:
+        <input name="twitter[]" type="text" value="{$key['twitter'][0]}" />
+        App Secret:
+        <input name="twitter[]" type="text" value="{$key['twitter'][1]}" />
+        <a href="https://dev.twitter.com/" target="_blank">{$_DZC_LANG['to_apply']}</a> )</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>{$_DZC_LANG['msn']}</strong> ( Client ID:
+        <input name="msn[]" type="text" value="{$key['msn'][0]}" />
+        Client secret:
+        <input name="msn[]" type="text" value="{$key['msn'][1]}" />
+        <a href="http://www.smyx.net/wiki/wordpress/faqs/msn" target="_blank">{$_DZC_LANG['how_to_get']}</a> )</td>
+    </tr>
+    <tr>
+      <td colspan="15"><div class="fixsel">
+          <input type="submit" class="btn" id="submit_editsubmit" name="editsubmit" title="{$_DZC_LANG['press_enter']}" value="{$_DZC_LANG['save']}" disabled />
+        </div></td>
+    </tr>
+  </table>
+</form>
+
+<form name="cpform" method="post" autocomplete="off" action="" id="push">
+  <table class="tb tb2 ">
+    <tr>
+      <th colspan="15" class="partition">&#8226; {$_DZC_LANG['comment_push_settings']}</th>
+    </tr>
+    <tr>
+      <td colspan="2" class="td27">{$_DZC_LANG['comment_push_tip']}</td>
+    </tr>
+    <tr>
+      <td colspan="2" class="vtop"><label><input class="checkbox" type="checkbox" name="comment_push_open" value="1" disabled /> {$_DZC_LANG['comment_push_open']}</label></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="td27"> {$_DZC_LANG['comment_push']}</td>
+    </tr>
+    <tr class="noborder">
+      <td class="vtop rowform"> <select name="comment_push">
+		<option value="15"{if $set['comment_push'] == 15} selected{/if}>{$_DZC_LANG['each']} 15 {$_DZC_LANG['minute']}</option>
+		<option value="30"{if $set['comment_push'] == 30} selected{/if}>{$_DZC_LANG['each']} 30 {$_DZC_LANG['minute']}</option>
+		<option value="60"{if $set['comment_push'] == 60} selected{/if}>{$_DZC_LANG['each']}{$_DZC_LANG['hour']}</option>
+		<option value="360"{if $set['comment_push'] == 360} selected{/if}>{$_DZC_LANG['each']} 6 {$_DZC_LANG['hour']}</option>
+		<option value="720"{if $set['comment_push'] == 720} selected{/if}>{$_DZC_LANG['each']} 12 {$_DZC_LANG['hour']}</option>
+		<option value="1440"{if $set['comment_push'] == 1440} selected{/if}>{$_DZC_LANG['each']}{$_DZC_LANG['day']}</option>
+		</select></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="td27"> {$_DZC_LANG['comment_push_expires']}</td>
+    </tr>
+    <tr class="noborder">
+      <td class="vtop rowform"> <select name="comment_expires">
+		<option value="1"{if $set['comment_expires'] == 1} selected{/if}>1 {$_DZC_LANG['day']}</option>
+		<option value="2"{if $set['comment_expires'] == 2} selected{/if}>2 {$_DZC_LANG['day']}</option>
+		<option value="3"{if $set['comment_expires'] == 3} selected{/if}>3 {$_DZC_LANG['day']}</option>
+		<option value="5"{if !$set['comment_expires'] || $set['comment_expires'] == 5} selected{/if}>5 {$_DZC_LANG['day']}</option>
+		<option value="7"{if $set['comment_expires'] == 7} selected{/if}>7 {$_DZC_LANG['day']}</option>
+		<option value="10"{if $set['comment_expires'] == 10} selected{/if}>10 {$_DZC_LANG['day']}</option>
+		<option value="15"{if $set['comment_expires'] == 15} selected{/if}>15 {$_DZC_LANG['day']}</option>
+		</select></td>
+    </tr>
+      <td colspan="15"><div class="fixsel">
+          <input type="submit" class="btn" id="submit_editsubmit" name="editsubmit" title="{$_DZC_LANG['press_enter']}" value="{$_DZC_LANG['save']}" disabled />
+        </div></td>
+    </tr>
+  </table>
+</form>
+
+<form name="cpform" method="post" autocomplete="off" action="" id="weixin">
+<table class="tb tb2 ">
+  <tr>
+    <th colspan="15" class="partition">&#8226; {$_DZC_LANG['weixin_custom_reply']}</td>
+  </tr>
+  <tr align="center" bgcolor="#F9FCEF">
+    <td width="20%" align="right"><strong>{$_DZC_LANG['keyword']}</strong></td>
+    <td width="10%">{$_DZC_LANG['reply_type']}</td>
+    <td width="70%" align="left"><strong>{$_DZC_LANG['reply_content']}</strong></td>
+  </tr>
+  <tr align="center">
+    <td width="20%" align="right">&nbsp;<input name="keyword" type="text" id="keyword" size="30" class='alltxt' /></td>
+    <td width="10%"><select name="type"><option value="1"{if $weixin_type == 1} selected{/if}>{$_DZC_LANG['weixin_type_1']}</option><option value="2"{if $weixin_type == 2} selected{/if}>{$_DZC_LANG['weixin_type_2']}</option></select></td>
+    <td align="left"><textarea name="reply" id="reply" cols="60" rows="3"></textarea> <input type="submit" class="btn" name="submitKeyword" value="{$_DZC_LANG['add_a']}" disabled /></td>
+  </tr>
+  <tr align="center">
+    <td width="20%" align="right"></td>
+    <td width="10%"></td>
+    <td align="left">{$_DZC_LANG['weixin_custom_description']}</td>
+  </tr>
+  <tr>
+    <td colspan="3" bgcolor="#F9FCEF">&nbsp;</td>
+  </tr>
+</table>
+</form>
+
+<form name="cpform" method="post" autocomplete="off" action="" id="cpform">
+<table class="tb tb2 ">
+  <tr>
+    <td width="20%" align="right"><strong>URL: </strong></td>
+    <td>{DZC_PLUGURL}/weixin.php</td>
+  </tr>
+  <tr>
+    <td align="right"><strong>Token: </strong></td>
+    <td><input name="token" type="text" size="35" value="{$token}" /></td>
+  </tr>
+  <tr>
+    <td align="right"><strong>{$_DZC_LANG['weixin_account']}</strong></td>
+    <td><input name="account" type="text" size="35" value="{$account}" /> {$_DZC_LANG['required']} {$_DZC_LANG['weixin_qr_code_tip']}</td>
+  </tr>
+  <tr>
+    <td align="right"><strong>{$_DZC_LANG['weixin_qr_code']}</strong></td>
+    <td><input name="qrcode" type="text" size="35" value="{$qrcode}" /> {$_DZC_LANG['required']} {$_DZC_LANG['weixin_qr_code_tip']}</td>
+  </tr>
+  <tr>
+    <td width="20%" align="right"></td>
+    <td>{$_DZC_LANG['weixin_help_tip']}</td>
+  </tr>
+  <tr>
+    <td align="right"><strong>{$_DZC_LANG['weixin_welcome_tip']}</strong></td>
+    <td><textarea name="welcome" cols="60" rows="3">{$welcome}</textarea></td>
+  </tr>
+  <tr>
+    <td align="right"><strong>{$_DZC_LANG['weixin_picurl_tip']}</strong></td>
+    <td><input name="picurl" type="text" size="60" value="{$picurl}" /></td>
+  </tr>
+  <tr>
+    <td align="right"><strong>{$_DZC_LANG['weixin_newest_tip']}</strong></td>
+    <td><input name="newest" type="text" size="35" value="{$newest}" /></td>
+  </tr>
+  <tr>
+    <td align="right"><strong>{$_DZC_LANG['weixin_random_tip']}</strong></td>
+    <td><input name="random" type="text" size="35" value="{$random}" /></td>
+  </tr>
+  <tr>
+    <td align="right"><strong>{$_DZC_LANG['weixin_nofound_tip']}</strong></td>
+    <td><textarea name="nofound" cols="60" rows="3">{$nofound}</textarea></td>
+  </tr>
+  <tr>
+    <td align="right">&nbsp;<b>{$_DZC_LANG['weixin_item_tip']}</strong></td>
+    <td><input name="item" type="text" id="item" size="30" value="{$item}" /> $_DZC_LANG['weixin_item']</td>
+  </tr>
+  <tr>
+    <td align="right"></strong></td>
+    <td><input type="submit" class="btn" id="submit_editsubmit" name="editsubmit" title="{$_DZC_LANG['press_enter']}" value="{$_DZC_LANG['save']}" disabled /></td>
+  </tr>
+</table>
+</form>
+
+<style type="text/css">
+#dragbox{padding:10px}
+#rectangle{float:left; border:1px dotted #F00; background-color:#FFF}
+#dragmarker{width:6px; position:absolute; display:none}
+#dragmarker img{float:left}
+#dragDropMoveLayer{position:absolute; display:none; border:1px solid #000; filter:alpha(opacity=90); opacity:0.9}
+#dragbox li{list-style-type:none; cursor:default; float:left; padding-right:3px}
+#dragbox li input {background: none repeat scroll 0 0 transparent;border: medium none;vertical-align: middle;}
+</style>
+<form name="cpform" method="post" autocomplete="off" action="" id="share">
+  <table class="tb tb2 ">
+    <tr>
+      <th colspan="15" class="partition">&#8226; {$_DZC_LANG['share_settings']}</th>
+    </tr>
+    <tr>
+      <td colspan="2" class="td27"> {$_DZC_LANG['share_position']}</td>
+    </tr>
+    <tr class="noborder">
+      <td class="vtop rowform"> <select name="share_position">
+		<option value="0"{if $set['share_position'] === 0} selected{/if}>{$_DZC_LANG['share_position_0']}</option>
+		<option value="1"{if $set['share_position'] == 1} selected{/if}>{$_DZC_LANG['share_position_1']}</option>
+		<option value="2"{if $set['share_position'] == 2} selected{/if}>{$_DZC_LANG['share_position_2']}</option>
+		</select></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="td27"> {$_DZC_LANG['share_button']}</td>
+    </tr>
+    <tr class="noborder">
+      <td class="vtop rowform"> <select name="share_button">
+		<option value="1"{if $set['share_button'] == 1} selected{/if}>{$_DZC_LANG['share_button_1']}</option>
+		<option value="2"{if $set['share_button'] == 2} selected{/if}>{$_DZC_LANG['share_button_2']}</option>
+		<option value="3"{if $set['share_button'] == 3} selected{/if}>{$_DZC_LANG['share_button_3']}</option>
+		</select></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="td27"> {$_DZC_LANG['share_content']}</td>
+    </tr>
+    <tr class="noborder">
+      <td class="vtop rowform"> <select name="share_content">
+		<option value="3"{if $set['share_content'] === 3} selected{/if}>{$_DZC_LANG['share_content_3']}</option>
+		<option value="1"{if $set['share_content'] === 1} selected{/if}>{$_DZC_LANG['share_content_1']}</option>
+		<option value="2"{if $set['share_content'] === 2} selected{/if}>{$_DZC_LANG['share_content_2']}</option>
+		</select></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="td27"> {$_DZC_LANG['share_select_button']}</td>
+    </tr>
+    <tr class="noborder">
+      <td colspan="2" class="vtop">
+		 <ul id="dragbox">
+			<!--{loop $options $k}-->
+			<li id="drag"><input name="share_{$k}" id="{$k}" type="checkbox" value="{$k}"{if $selects[$k]} checked{/if} />{$social[$k]}</li>
+			<!--{/loop}-->
+		 </ul>
+		 <div id="dragmarker">
+			<img src="{DZC_PLUGURL}/images/marker_top.gif">
+			<img src="{DZC_PLUGURL}/images/marker_middle.gif" id="dragmarkerline">
+			<img src="{DZC_PLUGURL}/images/marker_bottom.gif">
+		 </div>
+		 <input type="hidden" id="formdrag" name="share_select" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="15"><div class="fixsel">
+          <input type="submit" class="btn" id="submit_editsubmit" name="editsubmit" title="{$_DZC_LANG['press_enter']}" value="{$_DZC_LANG['save']}" onclick="saveData()" disabled />
+        </div></td>
+    </tr>
+  </table>
+</form>
+

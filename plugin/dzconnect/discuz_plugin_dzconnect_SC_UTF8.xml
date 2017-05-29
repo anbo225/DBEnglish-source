@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[]]></item>
+	<item id="Time"><![CDATA[2015-07-31 13:00]]></item>
+	<item id="From"><![CDATA[ ()]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[连接微博]]></item>
+			<item id="identifier"><![CDATA[dzconnect]]></item>
+			<item id="description"><![CDATA[支持使用QQ、新浪微博等18个社交帐号登录您的网站。同步帖子和回复到11大微博和社区。微博评论回推到网站，使用微信搜索Discuz!帖子，用微信发布微博。使用社会化分享按钮等。
+
+官方网站：http://smyx.net
+官方微博：http://weibo.com/smyx]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[dzconnect/]]></item>
+			<item id="copyright"><![CDATA[水脉烟香]]></item>
+			<item id="version"><![CDATA[1.0.9]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[m]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[home_binding]]></item>
+					<item id="menu"><![CDATA[连接微博设置]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[7]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[admincp]]></item>
+					<item id="menu"><![CDATA[基本设置]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[adminlogin]]></item>
+					<item id="menu"><![CDATA[登录设置]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[3]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="4">
+					<item id="name"><![CDATA[adminsync]]></item>
+					<item id="menu"><![CDATA[同步设置]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[4]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="5">
+					<item id="name"><![CDATA[adminkey]]></item>
+					<item id="menu"><![CDATA[更多功能]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[5]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2]]></item>
+		<item id="language">
+			<item id="templatelang">
+				<item id="member_register_tip"><![CDATA[You will use the {$weibo_name} account to register the site，<a href="{$login_url}">Change {$weibo_name} account</a>？]]></item>
+				<item id="member_loginbind_tip"><![CDATA[You will use the {$weibo_name} account to bind the site account，<a href="{$login_url}">Change {$weibo_name} account</a>？]]></item>
+				<item id="dzconnect_copyright"><![CDATA[以下内容由 Discuz!连接微博 插件提供: http://smyx.net/dzconnect]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+	</item>
+</root>

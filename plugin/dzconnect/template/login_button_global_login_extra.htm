@@ -1,0 +1,13 @@
+<!--{block return}-->
+<div class="fastlg_fm y" style="margin-right: 10px; padding-right: 10px">
+<!-- {lang dzconnect:dzconnect_copyright} -->
+<p style="padding-top:10px">{$_DZC_LANG['show_login_title2']} 
+<!--{loop $login_list $k}-->
+<a href="forum.php?sso=login&go={$k}" rel="nofollow" class='dz_m_link dz_m_{$k}' title='{$_DZC_LANG[$k]}'></a>
+<!--{/loop}-->
+<!--{if $login_num > 6}-->
+<a href="javascript:;" onclick="lsSubmit()" class="dz_mt_link xi2">{$_DZC_LANG['show_more_login']}</a>
+<!--{/if}-->
+</p>
+</div>
+<!--{/block}-->

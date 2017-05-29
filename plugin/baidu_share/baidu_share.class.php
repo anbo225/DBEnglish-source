@@ -145,7 +145,7 @@ class plugin_baidu_share_group extends plugin_baidu_share {
 
 class plugin_baidu_share_forum extends plugin_baidu_share {
 	function viewthread_postheader() {
-		return array('<div style="float:right;position:relative;top:-6px;">' . $this->script . '</div>');
+		return array('<div style="float:right;position:relative;top:16px;">' . $this->script . '</div>');
 	}
 	
 	function viewthread_postfooter(){

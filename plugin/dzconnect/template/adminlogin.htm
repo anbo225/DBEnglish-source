@@ -1,0 +1,25 @@
+<form name="cpform" method="post" autocomplete="off" action="" id="cpform">
+  <table class="tb tb2 ">
+    <tr>
+      <th colspan="15" class="partition">{$_DZC_LANG['login_settings']}</th>
+    </tr>
+    <tr>
+      <td colspan="2" class="vtop"><label><input class="checkbox" type="checkbox" name="is_display_login_button" value="1"{if $set['is_display_login_button']} checked{/if} /> {$_DZC_LANG['is_display_login_button']}</label></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="vtop"><label><input class="checkbox" type="checkbox" name="is_display_login_button_in_fastpost_box" value="1"{if $set['is_display_login_button_in_fastpost_box']} checked{/if} /> {$_DZC_LANG['is_display_login_button_in_fastpost_box']} </label></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="td27"> {$_DZC_LANG['admin_open_login_button']}</td>
+    </tr>
+	<!--{loop $login_list $k $v}-->
+    <tr><td colspan="2"><label><input class="checkbox" type="checkbox" name="login_list[]" value="{$k}"{if $v} checked{/if} /> {$_DZC_LANG[$k]}</label></td></tr>
+	<!--{/loop}-->
+	<tr><td colspan="2">{$_DZC_LANG['didnot_buy_title']}<!--{loop $login_list2 $v}--> {$_DZC_LANG[$v]} <!--{/loop}--></td></tr>
+    <tr>
+      <td colspan="15"><div class="fixsel">
+          <input type="submit" class="btn" id="submit_editsubmit" name="editsubmit" title="{$_DZC_LANG['press_enter']}" value="{$_DZC_LANG['save']}" />
+        </div></td>
+    </tr>
+  </table>
+</form>
