@@ -10,9 +10,9 @@
  */
 
 $lang = array (
-  'search_nomatch' => '对不起，没有找到匹配结果。',
-  'search_result' => '结果: <em>找到相关主题 $index[num] 个</em>',
-  'search_result_keyword' => '结果: <em>找到 “<span class="emfont">$keyword</span>” 相关内容 $index[num] 个</em>',
+  'search_nomatch' => 'Sorry, no match found.',
+  'search_result' => 'Result: <em> find related threads $index[num] </em>',
+  'search_result_keyword' => 'Result: <em>find “<span class="emfont">$keyword</span>”  related threads $index[num] </em>',
   'a_comment' => '个评论',
   'a_visit' => '次查看',
   'heat' => '热度',
