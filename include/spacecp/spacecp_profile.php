@@ -398,7 +398,7 @@ if(submitcheck('profilesubmit')) {
 	if($authstr) {
 		showmessage('profile_email_verify', 'home.php?mod=spacecp&ac=profile&op=password');
 	} else {
-		showmessage('profile_succeed', 'home.php?mod=spacecp&ac=profile&op=password');
+		showmessage('profile_succeed', 'forum.php');
 	}
 }
 
