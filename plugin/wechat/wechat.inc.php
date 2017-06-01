@@ -4,7 +4,7 @@
  *      [Discuz!] (C)2001-2099 Comsenz Inc.
  *      This is NOT a freeware, use is subject to license terms
  *
- *      $Id: wechat.inc.php 35959 2016-05-24 02:35:40Z nemohou $
+ *      $Id: wechat.inc.php 35227 2015-03-05 06:49:24Z nemohou $
  */
 if (!defined('IN_DISCUZ')) {
 	exit('Access Denied');
@@ -26,11 +26,6 @@ if($_GET['fromapp'] == 'index') {
 	$op = 'access';
 } else {
 	$op = $_GET['op'];
-}
-
-$preferer = parse_url($_GET['referer']);
-if(!$preferer['host'] || $preferer['host'] != 'wsq.discuz.com' && $preferer['host'] != 'wsq.discuz.qq.com') {
-	$_GET['referer'] = '';
 }
 
 $selfurl = $_G['siteurl'].'plugin.php?id=wechat&mobile=2&key='.$keyenc.($_GET['referer'] ? '&referer='.urlencode($_GET['referer']) : '').($_GET['username'] ? '&username='.urlencode($_GET['username']) : '').'&ac=';
@@ -227,9 +222,9 @@ if($ac == 'bind') {
 	if($wechatuser) {
 		showmessage('wechat:wechat_openid_exists');
 	} else {
-		if($_G['wechat']['setting']['wechat_qrtype']) {
+		if($_G['wechat']['setting']['wechat_qrtype']) {				
 			$mpmember = C::t('#wechat#common_member_wechatmp')->fetch_by_openid($wxopenid ? $wxopenid : $_GET['wxopenid']);
-			$mpmembers = C::t('common_member')->fetch_all(array_keys($mpmember));
+			$mpmembers = C::t('common_member')->fetch_all(array_keys($mpmember));		
 			if ($mpmembers) {
 				$memberfirst = array_shift($mpmembers);
 				$member = getuserbyuid($memberfirst['uid'], 1);
@@ -242,8 +237,8 @@ if($ac == 'bind') {
 						showmessage('wechat:wechat_member_register_succeed', $url);
 					}
 				}
-			}
-		}
+			}			
+		}		
 
 		if(DISCUZ_VERSION < 'X3.0' && $_G['inajax']) {
 			$_GET['username'] = WeChatEmoji::clear($_GET['username']);

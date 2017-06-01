@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.2]]></item>
+	<item id="Time"><![CDATA[2016-08-04 18:19]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://127.0.0.1/3.2gbk/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[0]]></item>
+			<item id="name"><![CDATA[ÃâÈÏÖ¤Î¢ÐÅµÇÂ¼]]></item>
+			<item id="identifier"><![CDATA[tiger_wechatlogin]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[tiger_wechatlogin/]]></item>
+			<item id="copyright"><![CDATA[HaoTeam Tiger]]></item>
+			<item id="version"><![CDATA[1.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[wechatmobile]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[wechat]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[¿ªÆôÎ¢ÐÅµÇÂ¼]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[radio]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[ºÃÍÅ¶ÓAPIµØÖ·]]></item>
+				<item id="description"><![CDATA[²»¿ÉÐÞ¸Ä]]></item>
+				<item id="variable"><![CDATA[service]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[http://v2.api.haoteam.net/?]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[ºÃÍÅ¶ÓºÏ×÷ID]]></item>
+				<item id="description"><![CDATA[ºÃÍÅ¶Ó¿ª·ÅÆ½Ì¨ÊÊºÏÓÚÃâÈÏÖ¤Î¢ÐÅµÇÂ¼µÄºÏ×÷ID http://open.haoteam.net]]></item>
+				<item id="variable"><![CDATA[partner]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[ºÃÍÅ¶ÓÍ¨ÐÅÃØÔ¿]]></item>
+				<item id="description"><![CDATA[ºÃÍÅ¶Ó¿ª·ÅÆ½Ì¨ÊÊºÏÓÚÃâÈÏÖ¤Î¢ÐÅµÇÂ¼µÄkeyÍ¨ÐÅÃØÔ¿ http://open.haoteam.net]]></item>
+				<item id="variable"><![CDATA[key]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[ÆôÓÃ¿ìËÙ×¢²á]]></item>
+				<item id="description"><![CDATA[¿ªÆôºóÎ´°ó¶¨µÄÎ¢ÐÅÓÃ»§½«Ö±½Ó×¢²áÎªÐÂÓÃ»§]]></item>
+				<item id="variable"><![CDATA[wechat_allowfastregister]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[ÊÇ·ñºöÂÔ×¢²á¹æÔò]]></item>
+				<item id="description"><![CDATA[¿ªÆôºó½«ºöÂÔ¡°×¢²áÓë·ÃÎÊ¿ØÖÆ¡±ÖÐµÄÒ»Ð©×¢²á¹æÔòÏÞÖÆ£¬Î¢ÐÅÓÃ»§¿ÉÖ±½Ó×¢²á³É¹¦]]></item>
+				<item id="variable"><![CDATA[wechat_disableregrule]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[Î¢ÐÅ×¢²áÓÃ»§Ä¬ÈÏÓÃ»§×é]]></item>
+				<item id="description"><![CDATA[Î¢ÐÅ×¢²áÓÃ»§µÄÄ¬ÈÏÓÃ»§×é£¬Áô¿Õ±íÊ¾Ê¹ÓÃÄ¬ÈÏ×¢²áÓÃ»§×é]]></item>
+				<item id="variable"><![CDATA[wechat_newusergroupid]]></item>
+				<item id="type"><![CDATA[group]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+	</item>
+</root>
